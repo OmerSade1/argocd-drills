@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "app.fullname" . }}
+data:
+  environment: {{ .Values.environment }}
+  appName: {{ .Values.appName }}
